@@ -24,3 +24,15 @@ command: **devrunner** ->
 - run npm run dev
 - exec node index.js
 </details>
+
+<details>
+<summary><h2>Git-Helper-cli</h2></summary>
+
+Cool git commands...
+
+command: **git-helper** ->
+
+- status
+- log
+- branch
+</details>
