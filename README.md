@@ -36,3 +36,16 @@ command: **git-helper** ->
 - log
 - branch
 </details>
+
+<details>
+<summary><h2>Notes-Cli</h2></summary>
+
+It's like a todo list, you can add-remove-clear-list the notes.
+
+command: **notes** ->
+
+- add "add-note"
+- list
+- remove (Num)
+- clear
+</details>
