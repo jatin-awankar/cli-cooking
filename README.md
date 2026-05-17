@@ -12,6 +12,9 @@ command: **minicalc** ->
 - mul num1 num2
 - div num1 num2
 - mod num1 num2
+
+Example - minicalc add 11 12
+
 </details>
 
 <details>
@@ -23,6 +26,9 @@ command: **devrunner** ->
 
 - run npm run dev
 - exec node index.js
+
+Example - devrunner exec npm run dev
+
 </details>
 
 <details>
@@ -35,6 +41,9 @@ command: **git-helper** ->
 - status
 - log
 - branch
+
+Example - git-helper status
+
 </details>
 
 <details>
@@ -48,4 +57,22 @@ command: **notes** ->
 - list
 - remove (Num)
 - clear
+
+Example - notes add "my-note"
+
+</details>
+
+<details>
+<summary><h2>Scaffold-Cli</h2></summary>
+
+Think it as a personal create-react-app
+
+command: **project-j** ->
+
+- create-app my-app
+
+or just create-app my-app
+
+Example - project-j create-app "app-name"
+
 </details>
