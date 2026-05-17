@@ -56,7 +56,9 @@ command: **minicalc** ->
 
 Example - minicalc add 11 12
 
-## </details>
+</details>
+
+---
 
 <details>
 <summary><h2>Dev-Runner-Cli</h2></summary>
@@ -70,7 +72,9 @@ command: **devrunner** ->
 
 Example - devrunner exec npm run dev
 
-## </details>
+</details>
+
+---
 
 <details>
 <summary><h2>Git-Helper-cli</h2></summary>
@@ -85,7 +89,9 @@ command: **git-helper** ->
 
 Example - git-helper status
 
-## </details>
+</details>
+
+---
 
 <details>
 <summary><h2>Notes-Cli</h2></summary>
@@ -101,4 +107,4 @@ command: **notes** ->
 
 Example - notes add "my-note"
 
-## </details>
+</details>
