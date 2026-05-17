@@ -1,5 +1,55 @@
 # CLI-cooking...
 
+## Todo — Professional Todo CLI
+
+A fast, interactive, and beautifully designed terminal-based Todo manager built with Node.js and Commander. 🤩
+
+Built to explore:
+
+- CLI engineering
+- terminal UX
+- filesystem persistence
+- interactive prompts
+- professional developer tooling
+
+---
+
+<details>
+<summary><h3>Features</h3></summary>
+
+- ⚡ Fast command-based workflow
+- 🎨 Colored terminal UI
+- ⏳ Loading spinners
+- 📋 Beautiful todo tables
+- 💾 Persistent JSON storage
+- ❓ Interactive confirmations
+- 🧱 Modular CLI architecture
+</details>
+
+<details>
+<summary><h3>Usage</h3></summary>
+
+Commands:
+
+- add "text" Add a todo
+- list List all todos
+- done "id" Mark todo complete
+- delete "id" Delete todo
+- clear Clear completed todos
+- help [command] display help for command
+</details>
+
+---
+
+### Installation
+
+```bash
+git clone <your-repo>
+cd professional-todo-cli
+npm install
+npm link
+```
+
 <details>
 <summary><h2>MiniCalc</h2></summary>
 
@@ -76,3 +126,4 @@ or just create-app my-app
 Example - project-j create-app "app-name"
 
 </details>
+```
