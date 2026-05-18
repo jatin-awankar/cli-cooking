@@ -1,110 +1,121 @@
-# CLI-cooking...
+# CLI Cooking
 
----
+A collection of small Node.js CLI tools for productivity, scaffolding, and developer workflows.
 
-## Todo — Professional Todo CLI
+## Featured CLIs
 
-A fast, interactive, and beautifully designed terminal-based Todo manager built with Node.js and Commander. 🤩
+| `todo-cli`                                                                                           | `create-jatin-app`                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Purpose**: Manage todos from terminal with persistent storage.                                     | **Purpose**: Scaffold new projects with interactive prompts.                                                                                                |
+| **Bin**: `todo`                                                                                      | **Bin**: `create-jatin-app`                                                                                                                                 |
+| **Highlights**: Add/list/complete/delete/clear todos, table output, colored UI, JSON persistence.    | **Highlights**: Framework selection, TypeScript option, dependency install option, git init option, spinner/log feedback.                                   |
+| **Install**: `npm i -g ./todo-cli`                                                                   | **Install**: `npm i -g ./create-jatin-app`                                                                                                                  |
+| **Run (dev)**: `cd todo-cli && npm run dev`                                                          | **Run (dev)**: `cd create-jatin-app && node index.js`                                                                                                       |
+| **Key Commands**: `todo add "task"`, `todo list`, `todo done <id>`, `todo delete <id>`, `todo clear` | **Key Flow**: `create-jatin-app` -> enter project name -> choose framework (`vanilla`, `express`, `next`, `react-vite`) -> pick TypeScript/deps/git options |
 
-Built to explore:
+### `todo-cli` Usage
 
-- CLI engineering
-- terminal UX
-- filesystem persistence
-- interactive prompts
-- professional developer tooling
+```bash
+todo add "Ship CLI README"
+todo list
+todo done 1
+todo delete 1
+todo clear
+```
+
+### `create-jatin-app` Usage
+
+```bash
+create-jatin-app
+```
+
+What it scaffolds:
+
+- Vanilla Node starter
+- Express REST API starter
+- Next.js App Router starter
+- React + Vite starter
+
+Typical next steps after generation:
+
+```bash
+cd <project-name>
+npm install
+npm run dev
+```
+
+## Other CLIs
 
 <details>
-<summary><h3>Features</h3></summary>
+<summary><strong>dev-runner-cli</strong></summary>
 
-- ⚡ Fast command-based workflow
-- 🎨 Colored terminal UI
-- ⏳ Loading spinners
-- 📋 Beautiful todo tables
-- 💾 Persistent JSON storage
-- ❓ Interactive confirmations
-- 🧱 Modular CLI architecture
+- **Bin**: `devrunner`
+- **Purpose**: Run development commands quickly.
+- **Command**: `run`
+
+```bash
+devrunner run "npm run dev"
+devrunner run "node index.js"
+```
+
 </details>
 
 <details>
-<summary><h3>Usage</h3></summary>
+<summary><strong>git-helper-cli</strong></summary>
 
-Commands:
+- **Bin**: `git-helper`
+- **Purpose**: Shortcut wrapper for common git checks.
+- **Commands**: `status`, `log`, `branch`
 
-- add "text" Add a todo
-- list List all todos
-- done "id" Mark todo complete
-- delete "id" Delete todo
-- clear Clear completed todos
-- help [command] display help for command
-</details>
-
----
-
-<details>
-<summary><h2>MiniCalc</h2></summary>
-
-It's like a calculator on your own cli 🤩
-
-command: **minicalc** ->
-
-- add num1 num2
-- sub num1 num2
-- mul num1 num2
-- div num1 num2
-- mod num1 num2
-
-Example - minicalc add 11 12
+```bash
+git-helper status
+git-helper log
+git-helper branch
+```
 
 </details>
 
----
-
 <details>
-<summary><h2>Dev-Runner-Cli</h2></summary>
+<summary><strong>scaffold-cli</strong></summary>
 
-My own dev command 🤠
+- **Bin**: `project-j`
+- **Purpose**: Scaffold a basic app template.
+- **Commands**: `create-app <project-name>` or direct project name argument
 
-command: **devrunner** ->
-
-- run npm run dev
-- exec node index.js
-
-Example - devrunner exec npm run dev
+```bash
+project-j create-app my-app
+# or
+project-j my-app
+```
 
 </details>
 
----
-
 <details>
-<summary><h2>Git-Helper-cli</h2></summary>
+<summary><strong>minicalc-cli</strong></summary>
 
-Cool git commands...
+- **Bin**: `minicalc`
+- **Purpose**: Basic arithmetic in terminal.
+- **Commands**: `add`, `sub`, `mul`, `div`, `mod`
 
-command: **git-helper** ->
-
-- status
-- log
-- branch
-
-Example - git-helper status
+```bash
+minicalc add 11 12
+minicalc div 20 5
+```
 
 </details>
 
----
-
 <details>
-<summary><h2>Notes-Cli</h2></summary>
+<summary><strong>notes-cli</strong></summary>
 
-It's like a todo list, you can add-remove-clear-list the notes.
+- **Bin**: `notes`
+- **Purpose**: Simple notes manager with local persistence.
+- **Commands**: `add`, `list`, `remove`, `clear`
 
-command: **notes** ->
-
-- add "add-note"
-- list
-- remove (Num)
-- clear
-
-Example - notes add "my-note"
+```bash
+notes add "review PR #42"
+notes list
+notes remove 1
+notes clear
+```
 
 </details>
